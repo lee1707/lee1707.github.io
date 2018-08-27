@@ -11,8 +11,6 @@ tags: [blog, jekyll, github.io, windows]
 3. 2의 폴더에 theme 압축 푼것 넣고 다시 jekyll 구동 
 4. http://[github 사용자명.github.io]으로 2차 확인
 
-그러나 '간략한' 방법을 보고 만들 수 있는 초보는 없음 
-
 
 -
 
