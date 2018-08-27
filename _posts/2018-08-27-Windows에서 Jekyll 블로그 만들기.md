@@ -1,7 +1,7 @@
 ---
 layout: post
-title: github
-category: Windows에서 Jekyll 블로그 만들기
+title: Windows에서 Jekyll 블로그 만들기
+category: github
 tags: [blog, jekyll, github.io, windows]
 ---
 
@@ -30,8 +30,7 @@ tags: [blog, jekyll, github.io, windows]
 4. 포스팅하기
 - [지킬(jekyll)로 포스팅하기](https://jungtaejtkim.github.io/dev/2017/05/02/posting/)
 - [Jekyll과 Lanyon을 이용한 블로깅 및 테마 편집 방법](https://minyoungjung.github.io/%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95/%EB%B8%94%EB%A1%9C%EA%B7%B8/2017/05/31/lanyon-theme-customize/)
-
--
+- [깃허브블로그 jekyll, lanyon theme 적용](https://wkimdev.github.io/jekyll/2018/04/06/blog-theme-change/)
 
 
 ### github blog 만들때 헷갈릴 때 알아두어야 할 것
