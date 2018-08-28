@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Windows에서 Jekyll 블로그 만들기
-category: Github
+category: Jekyll
 tags: [blog, jekyll, github.io, windows]
 ---
 
