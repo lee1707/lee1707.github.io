@@ -7,13 +7,19 @@ tags: [blog, jekyll,github, githubpage, update,load,error,problem]
 
 ### 문제
 
-1. Post를 알맞게 적고(1. 시간 설정을 잘 알고 있고 2. 제목을 알맞게 적었다) 
+**내 Github page에서 post가 업데이트 되지 않는다**
+
+## 먼저 확인해야 할것 
+1. Post를 알맞게 적었는지(=1. 시간 설정을 잘 알고 있고 2. 제목을 알맞게 적었다) 
+	
 	1. 만약 따로 시간 설정을 하지 않았을 경우 UTC 시간이 포스팅의 기준이 된다. 현재 시간을 기준으로 미래 시간 타이틀인 포스트는 업데이트 되지 않는다. 
 	ex) 오늘이 1월 1일이고 2040-01-01-title.md로 포스팅을 한 경우,  UTC Time이 12월 31일 저녁 10시면, 포스팅은 2시간 후에 올라오게 된다.
 
 	2. 제목은 위와 같이 YYYY-MM-DD로 적어야 하며 포스팅 페이지 위쪽의 title : title... 등도 콜론(:)을 알맞게 적어야 한다. 
 
-	- [만약 이게 확실하지 않을 경우+이 외에도 체크해야할 것](https://stackoverflow.com/questions/30625044/jekyll-post-not-generated)-[UTC 현재시간 확인](https://time.is/UTC)
+	- [만약 이게 확실하지 않을 경우+이 외에도 체크해야할 것](https://stackoverflow.com/questions/30625044/jekyll-post-not-generated)
+
+	-[UTC 현재시간 확인](https://time.is/UTC)
 
 
 2. Github으로 push를 성공적으로 했으며 이를 내 Github에서 확인 가능하다. 
@@ -24,7 +30,11 @@ tags: [blog, jekyll,github, githubpage, update,load,error,problem]
 여기서 user6929107의 답변을 보기
 
 ### 해결방법
+
+**브라우저 캐시 지우기(방문기록 등의 캐시 전체 지우기)**
+
 *나의 경우*
+
 Specifically my issue was the following:
 
 - I had created a github.pages site with a custom domain.
