@@ -32,7 +32,12 @@ tags: [blog, jekyll, github.io, windows]
 - [Jekyll과 Lanyon을 이용한 블로깅 및 테마 편집 방법](https://minyoungjung.github.io/%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95/%EB%B8%94%EB%A1%9C%EA%B7%B8/2017/05/31/lanyon-theme-customize/)
 - [깃허브블로그 jekyll, lanyon theme 적용](https://wkimdev.github.io/jekyll/2018/04/06/blog-theme-change/)
 
+5. 마크다운(마크업 언어)
+-[마크다운](https://namu.wiki/w/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4#s-2.5)
+	1. 코드는 tab을 한 후 입력한다(앞 네칸을 띄우는 것)
+	2. 문장 중간에 있는 등의 코드는 특수문자 "`"로 앞뒤로 감싸서 사용한다.(키보드 Esc 바로 밑의 문자임)
 
+	
 ### github blog 만들때 헷갈릴 때 알아두어야 할 것
 1. repository이름은 *꼭* [github사용자명.github.io]로 만들어야함
 2. [http://127.0.0.1:4000](http://127.0.0.1:4000) 으로 확인
