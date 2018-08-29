@@ -2,7 +2,7 @@
 layout: post
 title: Ajax로 Servelt과 데이터 주고받기
 category: Ajax
-tags: [Ajax, Servlet, JSP, JQuery, JSON]
+tags: [Ajax]
 ---
 
 ### 알아두어야 할 것

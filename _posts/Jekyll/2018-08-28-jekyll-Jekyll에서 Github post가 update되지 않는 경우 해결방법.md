@@ -2,7 +2,7 @@
 layout: post
 title: Jekyll에서 Github post가 update되지 않는 경우 해결방법
 category: Jekyll 
-tags: [blog, jekyll,github, githubpage, update,load,error,problem]
+tags: [jekyll]
 ---
 
 ### 문제

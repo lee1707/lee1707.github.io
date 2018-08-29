@@ -2,7 +2,7 @@
 layout: post
 title: Windows에서 Jekyll 블로그 만들기
 category: Jekyll
-tags: [blog, jekyll, github.io, windows]
+tags: [jekyll]
 ---
 
 ### Windows에서 Jekyll 블로그 만드는 '간략한' 방법

@@ -2,7 +2,7 @@
 layout: post
 title: 180827 TIL First Post!
 category: TIL
-tags: [blog, TIL]
+tags: [TIL]
 ---
 
 ### 오늘 한 일
