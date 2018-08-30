@@ -12,8 +12,6 @@ tags: [jekyll]
 4. http://[github 사용자명.github.io]으로 2차 확인
 
 
--
-
 
 ### 자세한 순서(도움받은 사이트 목록) - 그대로 설치 하면 됨  
 1. Jekyll 설치에 앞서서
@@ -23,19 +21,6 @@ tags: [jekyll]
 - [설치]( https://blog.psangwoo.com/coding/2017/04/02/install-jekyll-on-windows.html)
 -  [만약 설치에 대해 모르겠으면](http://tech.whatap.io/2015/09/11/install-jekyll-on-windows/) - 오래된 자료라 python, pip은 추가로 설치 필요 없음, 1번과 마지막만 참고하기
 
-3. Theme적용하기
--  [Jekyll을 이용한 .github.io 블로그 만들기](https://gmlwjd9405.github.io/2017/10/06/Jekyll-github.io-blog-3.html)
--  [Jekyll 블로그에 테마 적용하기](http://my2kong.net/2016/07/07/jekyll-blogging-theme/)
-
-4. 포스팅하기
-- [지킬(jekyll)로 포스팅하기](https://jungtaejtkim.github.io/dev/2017/05/02/posting/)
-- [Jekyll과 Lanyon을 이용한 블로깅 및 테마 편집 방법](https://minyoungjung.github.io/%ED%99%98%EA%B2%BD%EC%84%A4%EC%A0%95/%EB%B8%94%EB%A1%9C%EA%B7%B8/2017/05/31/lanyon-theme-customize/)
-- [깃허브블로그 jekyll, lanyon theme 적용](https://wkimdev.github.io/jekyll/2018/04/06/blog-theme-change/)
-
-5. 마크다운(마크업 언어)
--[마크다운](https://namu.wiki/w/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4#s-2.5)
-	1. 코드는 tab을 한 후 입력한다(앞 네칸을 띄우는 것)
-	2. 문장 중간에 있는 등의 코드는 특수문자 "`"로 앞뒤로 감싸서 사용한다.(키보드 Esc 바로 밑의 문자임)
 
 	
 ### github blog 만들때 헷갈릴 때 알아두어야 할 것
