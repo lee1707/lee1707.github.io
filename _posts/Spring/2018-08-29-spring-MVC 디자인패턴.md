@@ -6,14 +6,14 @@ tags: [MVC디자인패턴]
 ---
 
 
-> [생활코딩 MVC 디자인 패턴](https://opentutorials.org/course/697/3828)을 듣고 정리한 글 
+> 출처 : [생활코딩 MVC 디자인 패턴](https://opentutorials.org/course/697/3828) 
 
 ### MVC 디자인 패턴
 **디자인 패턴**은 건축으로치면 공법에 해당하는 것으로 소프트웨어의 개발 방법을 공식화 한 것이다. 
 
 소수의 뛰어난 엔지니어가 해결한 문제를 다수의 엔지니어들이 처리 할 수 있도록 한 규칙이면서, 구현자들 간의 커뮤니케이션의 효율성을 높이는 기법이다.
 
-![MVC_Design_pattern](C:\Users\gramgram\Desktop\java\jekyll\Spring\MVC_Design_pattern.png)
+![MVC_Design_pattern](../public/img/spring/MVC_Design_pattern.png)
 
 - User는 시스템을 사용한다=명령을 내린다.
 
