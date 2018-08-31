@@ -6,7 +6,7 @@ tags: [MVC디자인패턴]
 ---
 
 
-> 출처 : [생활코딩 MVC 디자인 패턴](https://opentutorials.org/course/697/3828) 
+> 출처 : [생활코딩 MVC 디자인 패턴](https://opentutorials.org/course/697/3828) <br/>
 > [Swift로 iOS11 앱 개발하기](https://www.edwith.org/swiftapp/lecture/26620)
 
 ### MVC 디자인 패턴(Model-View-Controller)
@@ -25,43 +25,6 @@ tags: [MVC디자인패턴]
 - Model은 데이터 핸들링, View는 사용자에게 시각적으로 보여주는것을 핸들링,
 
 - Controller는 사용자 요구에 따라 모델과 뷰를 적당히 사용해서 최종적으로 시스템이 가지고 있는 데이터를 View를 통해 사용자에게 보여주게된다.
-
-
-
-### MVC 디자인 패턴 간단히 정리(iOS App 관점의 설명) 
-![MVC_Design_pattern2](../public/img/spring/MVC_Design_pattern2.png)
-
-1. Model
-앱이**무엇**인지에 대해 관심을 가진다. UI와 독립되어 있다.
-
-2. Controller
-**어떻게** 화면에 표시할 것인지에 대해 관심을 가진다.
-
-3. View
-UIButton, UIViewController, UILabel와 같은 UI와 관련된 것이고 Controller의 통제를 받게 됩니다.
-
-
-## 서로의 관계
-
-- Model과 Controller
-
-Controller는 모델에 직접적으로 접근할 수 있지만, Model은 Controller에 Notification & KVO 방식을 통해 모델의 변화를 알린다.
-
-- Model과 View
-
-Model은 UI에 독립적이며 View와 소통할 수 없으며, View 또한 불가능하다.
-
-
-- View와 Controller
-
-Controller는 View에 대해 outlet을 이용해 View에게 직접적으로 접근할 수 있다. =
-
-View는 Controller에게 구조적으로 미리 정해진 방식으로 Controller에게 행위에 대한 요청(delegate)과 데이터에 대한 요청(data source)을 할 수 있다. 
-
-뿐만 아니라, action(View) - target(controller)의 구조로 사용자의 행위에 따라 필요한 함수를 호출할 수도 있다.
-
-아래와 같은 MVC 패턴이 여러개 모여 하나의 앱을 만들게 된다
-
 
 ### Web과 MVC
 위의 개념을 웹에 적용해보자. 
@@ -98,3 +61,36 @@ View는 Controller에게 구조적으로 미리 정해진 방식으로 Controlle
 프래임워크 도입을 위해서 충분한 학습시간을 갖는 것이 매우 중요하다. 
 
 
+### MVC 디자인 패턴 간단히 정리(iOS App 관점의 설명) 
+![MVC_Design_pattern2](../public/img/spring/MVC_Design_pattern2.png)
+
+1. Model
+앱이**무엇**인지에 대해 관심을 가진다. UI와 독립되어 있다.
+
+2. Controller
+**어떻게** 화면에 표시할 것인지에 대해 관심을 가진다.
+
+3. View
+UIButton, UIViewController, UILabel와 같은 UI와 관련된 것이고 Controller의 통제를 받게 됩니다.
+
+
+## 서로의 관계
+
+- Model과 Controller
+
+Controller는 모델에 직접적으로 접근할 수 있지만, Model은 Controller에 Notification & KVO 방식을 통해 모델의 변화를 알린다.
+
+- Model과 View
+
+Model은 UI에 독립적이며 View와 소통할 수 없으며, View 또한 불가능하다.
+
+
+- View와 Controller
+
+Controller는 View에 대해 outlet을 이용해 View에게 직접적으로 접근할 수 있다. =
+
+View는 Controller에게 구조적으로 미리 정해진 방식으로 Controller에게 행위에 대한 요청(delegate)과 데이터에 대한 요청(data source)을 할 수 있다. 
+
+뿐만 아니라, action(View) - target(controller)의 구조로 사용자의 행위에 따라 필요한 함수를 호출할 수도 있다.
+
+아래와 같은 MVC 패턴이 여러개 모여 하나의 앱을 만들게 된다
