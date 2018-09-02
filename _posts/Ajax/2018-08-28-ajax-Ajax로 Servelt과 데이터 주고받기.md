@@ -8,8 +8,7 @@ tags: [Ajax]
 ### 알아두어야 할 것
 1. 오류가 났을 때는 console.log로 찍어서 확인해보기
 	> console.log('error');
-	
-    개발자도구 콘솔에서 확인 가능
+	개발자도구 콘솔에서 확인 가능
 
 2. 이름을 지을 때는 꼭 단수, 복수, list등에 유의해서 짓기 - 나중에 헷갈리지 않음
 
@@ -29,14 +28,18 @@ tags: [Ajax]
    	이게 호출되는 시점에 버튼에 이벤트가 바인딩(붙는)되는 것이기 때문에,  호출되는 시점을 문서가 로드된 이 후에 되도록 해야한다.
 
 -  만약 위에 두려면 이렇게 하는게 좋다.
-	>   $(document).ready(function() {
+
+```
+   $(document).ready(function() {
         console.log('document loaded');
         });
+```
 	여기서 하려면 요렇게 도큐먼트가 레디가 되었을 때 이벤트를 설정해줘야 한다.
-
 	
 
 ### Servlet
+
+```
 	String id = request.getParameter("id");
 		...
 	response.setContentType("application/json");
@@ -45,11 +48,14 @@ tags: [Ajax]
 			.append("\"}");
 	response.getWriter().flush();
 	response.getWriter().close();
+```
 
 임의로 JSON과 같은 형식으로 만듦
 
     
 ### JSP(Ajax 부분만)
+
+```
     $('.btn').click(function() {
 		// <input ... data-todo-id="THIS!!">
 		// $(this).attr('data-todo-id'); 이렇게 받아올 수 있음 
@@ -77,3 +83,4 @@ tags: [Ajax]
 			}
 		});
 	})
+```

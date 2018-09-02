@@ -59,20 +59,14 @@
               {% assign sub_url = sub_nav[1] | prepend: site.baseurl %}
             {% endif %}
               <a class="sidebar-nav-item sidebar-nav-item-sub {% if page.url == sub_nav[1] %}active{% endif %}" href="{{ sub_url }}">
-                {{ sub_nav[0] }} -
-                  {% assign counter = 0 %}
-                  {% for item in site.categories.[t] %}
-                  {% unless item.published == false %}
-                  {% assign counter=counter | plus:1 %}
-                  {% endunless %}{% endfor %}
-                  {{ counter }}
+                {{ sub_nav[0] }} 
               </a>
           {% endfor %}
         {% endfor %}
       </span>
 
     {% endfor %}
-    
+
   <div class="sidebar-item">
     <p>
     Powered by <a href="http://jekyllrb.com">jekyll</a> and <a href="http://codinfox.github.io">codinfox-lanyon</a>
