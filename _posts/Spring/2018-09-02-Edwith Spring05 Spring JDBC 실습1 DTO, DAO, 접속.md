@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Edwith Spring 05 - Spring JDBC 실습 DTO, DAO
+title: Edwith Spring 05 - Spring JDBC 실습1 DTO, DAO, 접속
 category: Spring
 tags: [spring, springjdbc, dao, dto]
 ---
@@ -172,6 +172,20 @@ ApplicationContext한테 어떤 설정들을 읽어들여서 공장을 만들어
 	DB관련 설정은 DBConfig라는 파일에다가 따로 작성할 생각으로
 	이렇게 Import라는 어노테이션을 이용해서 설정을 해줌
 
+```
+package kr.or.connect.daoexam.config;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
+
+@Configuration
+@Import({DBConfig.class})
+public class ApplicationConfig {
+
+}
+```
+
 ### 2. DBConfig에는
 `@Configuration`과
 `@EnableTransactionManagement`
@@ -185,6 +199,20 @@ Spring JDBC를 이용할 때 DataSource를 통해서 DB에 접속하는 부분�
 DataSource객체는 커넥션을 관리할 것이기 때문에 JDBC 드라이버, url, username, password를 알아야만
 생성할 수 있다
 
+```
+package kr.or.connect.daoexam.config;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
+
+@Configuration
+@Import({DBConfig.class})
+public class ApplicationConfig {
+
+}
+```
+
 
 여기까지하면 최소한의 설정이 끝남
 여기까지 했을 때 이런 정보를 잘 읽어서 데이터베이스에 접속이 되는지 확인해봐야함
@@ -196,6 +224,44 @@ DataSource객체는 커넥션을 관리할 것이기 때문에 JDBC 드라이버
 Bean들을 여러개 등록했으니까 **Spring 컨테이너**가 Bean들을 생성하고 Bean을 관리해야함
 
 **ApplicationContext공장을 하나 새로 생성해야함**
+
+```
+package kr.or.connect.daoexam.main;
+
+import java.sql.Connection;
+
+import javax.sql.DataSource;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import kr.or.connect.daoexam.config.ApplicationConfig;
+
+public class DataSourceTest {
+
+	public static void main(String[] args) {
+		ApplicationContext ac = new AnnotationConfigApplicationContext(ApplicationConfig.class);
+		DataSource ds = ac.getBean(DataSource.class);
+		Connection conn = null;
+		try {
+			conn = ds.getConnection();
+			if(conn != null)
+				System.out.println("접속 성공^^");
+		}catch (Exception e) {
+			e.printStackTrace();
+		}finally {
+			if(conn != null) {
+				try {
+					conn.close();
+				}catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		}
+	}
+
+}
+```
 
 ApplicationConfig에서 설정을 읽어들임(얘가 DBConfig도 Import하기에 얘만 읽어들이면됨)
 
@@ -237,20 +303,3 @@ ApplicationConfig.class에 들어있는 설정파일을 읽어서 ApplicationCon
 이 컨테이너가 가지고 있는 getBean()을 이용해서 DataSource라는 클래스를 요청,
 DataSource를 구현하고 있는 객체를 나한테 리턴해줌
 DataSource한테 getConnection이라는 메서드를 이용해서 Connection을 얻어옴
-
-
-### 2.DTO 클래스를 만들고,
-RoleDaoSqls라는 클래스를 만듦.
-
-query를 만들어서 사용할 건데 상수로 지정해줄것임
-상수는 모든 글자를 대문자로 쓰는 것이 관례임
-
-```
-public static final String SELECT_ALL = "SELECT role_id, description FROM role order by role_id";
-```
-
-### 3.DAO 클래스를 만드는데, DAO 객체에는 저장소의 역할을 한다는 의미에서 @Repository라는 어노테이션을 붙임
-
-DAO를 실행할 때 NamedParameterJdbcTemplate, SimpleJdbcInsert객체를 이용함
-
-이 객체들은 Spring JDBC가 실제 JDBC를 편하게하기 위해서 이미 구현해 놓은 객체라고 생각하면됨

@@ -32,7 +32,7 @@ QuickStart로 만든 다음 pom.xml 파일에 JDK를 사용하기 위한 플러�
 - project-properties-java compiler에서 버전 확인
 
 
-# 2. <span style="color:red">Bean class 만들기</span>
+# 2. Bean class 만들기
 
 src/main/java아래에 프로젝트 패키지 아래에 Bean을 만들어준다.
 
