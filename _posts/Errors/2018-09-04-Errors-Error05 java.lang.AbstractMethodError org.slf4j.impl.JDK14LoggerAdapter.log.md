@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Error05 java.lang.AbstractMethodError: org.slf4j.impl.JDK14LoggerAdapter.log
+title: Error05 java.lang.AbstractMethodError org.slf4j.impl.JDK14LoggerAdapter.log
 category: Errors 
 tags: [slf4j, logger, error]
 ---
