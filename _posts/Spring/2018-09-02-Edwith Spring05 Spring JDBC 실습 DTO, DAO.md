@@ -34,7 +34,7 @@ DB연결은 비용이 많이 든다.
 커넥션이 필요하면 커넥션 풀에게 빌려서 사용한 후 반납한다.
 
 
-[이미지]
+![Spring_JDBC__DAO_.png](../public/img/spring/Spring_JDBC__DAO_.png)
 
 
 # 실제 실행되는 순서
