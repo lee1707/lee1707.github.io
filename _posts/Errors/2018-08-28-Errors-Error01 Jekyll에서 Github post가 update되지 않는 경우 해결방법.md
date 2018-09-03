@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Jekyll에서 Github post가 update되지 않는 경우 해결방법
-category: Jekyll 
-tags: [jekyll]
+title: Error01 Jekyll에서 Github post가 update되지 않는 경우 해결방법
+category: Errors
+tags: [jekyll, githubpostnotupdate]
 ---
 
 ### 문제
