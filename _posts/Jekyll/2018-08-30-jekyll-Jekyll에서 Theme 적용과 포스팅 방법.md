@@ -16,6 +16,15 @@ tags: [jekyll, markdown]
 
 3. 마크다운(마크업 언어)
 -[마크다운](https://namu.wiki/w/%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4#s-2.5)
-	1. 코드는 tab을 한 후 입력한다(앞 네칸을 띄우는 것)
+```
+	1. 코드는 ``` 를 세개씩 앞뒤로 붙여서 사용한다
+	이렇게 앞에 세개```code``` 뒤에 세개
+
 	2. 문장 중간에 있는 등의 코드는 특수문자 "\`"로 앞뒤로 감싸서 사용한다.(키보드 Esc 바로 밑의 문자임)
+	
 	3 이미지 넣는 방법 : `![MVC_Design_pattern](../public/img/spring/MVC_Design_pattern.png)`
+	
+	4. 글씨 색깔 변경은 
+
+	<span style="color:red">여기에 문장, 단어 등을 적는다</span>
+	```
