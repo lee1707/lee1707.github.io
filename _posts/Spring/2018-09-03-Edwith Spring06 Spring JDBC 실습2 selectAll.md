@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Edwith Spring 05 - Spring JDBC 실습2 select
+title: Edwith Spring 06 - Spring JDBC 실습2 selectAll
 category: Spring
-tags: [spring, springjdbc, select]
+tags: [spring, springjdbc, selectall]
 ---
 
 >[Edwith Spring - Spring JDBC 실습](https://www.edwith.org/boostcourse-web/lecture/20661/)을 보고 학습용으로 정리한 내용입니다.
