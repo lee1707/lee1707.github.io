@@ -9,8 +9,7 @@ tags: [spring, springmvc]
 
 
 # Spring MVC 기본 동작 흐름
-
-![dispatcherservlet.png](../public/img/spring/component/dispatcherservlet.png)
+![dispatcherservlet](../public/img/spring/component/dispatcherservlet.png)
 
 - 파란색 : Spring MVC가 제공해주는 것들
 - 보라색 : 개발자가 만들어야 하는 부분
