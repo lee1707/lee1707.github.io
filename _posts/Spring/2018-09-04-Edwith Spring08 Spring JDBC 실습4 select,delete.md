@@ -21,12 +21,12 @@ query문을 적을 때 `*`로 적는 것보다는 column명을 정확하게 나�
 ### 2. RoleDao에 select와 update메서드를 추가
 
 ```
-	public int deleteById(Integer id) {
-		Map<String, ?> params = Collections.singletonMap("roleId", id);
+public int deleteById(Integer id) {
+	Map<String, ?> params = Collections.singletonMap("roleId", id);
 		
-		//NamedParameterJdbcTemplate이 갖고 있는 update메서드 실행
-		return jdbc.update(DELETE_BY_ROLE_ID, params);
-	}
+	//NamedParameterJdbcTemplate이 갖고 있는 update메서드 실행
+	return jdbc.update(DELETE_BY_ROLE_ID, params);
+}
 ```
 
 delete경우 값이 하나만 들어오기 때문에 update문 처럼 SqlParameterSource(Map으로 바꿔주는 것)을 객체를 만들어서 사용하기 보다는
@@ -35,14 +35,14 @@ Collections.singletonMap같은 경우처럼 값이 여러개 들어가지 않고
 		
 
 ```	
-	public Role selectById(Integer id) {
-		try {
-			Map<String, ?> params = Collections.singletonMap("roleId", id);
-			return jdbc.queryForObject(SELECT_BY_ROLE_ID, params, rowMapper);		
-		}catch(EmptyResultDataAccessException e) {
-			return null;
-		}
+public Role selectById(Integer id) {
+	try {
+		Map<String, ?> params = Collections.singletonMap("roleId", id);
+		return jdbc.queryForObject(SELECT_BY_ROLE_ID, params, rowMapper);		
+	}catch(EmptyResultDataAccessException e) {
+		return null;
 	}
+}
 
 ```
 

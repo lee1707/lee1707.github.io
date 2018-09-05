@@ -21,9 +21,7 @@ MVC는 Model-View-Controller<br/>
 
 Java bean은 앞에서 실습한 JDBC로 작성했던 RoleDao 클래스를 생각하면 된다.
 
-- 문제점
-
-JSP자체에 Java코드와 HTML코드가 섞이고 유지보수가 어렵다.
+- 문제점 : JSP자체에 Java코드와 HTML코드가 섞이고 유지보수가 어렵다.
 
 # MVC Model 2 아키텍처
 
